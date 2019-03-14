@@ -223,10 +223,11 @@ button:hover {
 .container {
   margin: 30px 10px;
   display: flex;
+  justify-content: space-around;
 }
 
-.leftpadding {
-  margin-left: 65px;
+.container section {
+  padding: 10px;
 }
 
 /*Changin font*/
@@ -323,6 +324,7 @@ ul li {
 /* media queries */
 
 @media (max-width: 800px) {
+  /* Navbar */
   .logo {
     display: none;
   }
@@ -332,13 +334,16 @@ ul li {
     padding-top: 20px;
   }
 
+  /* Banner img */
   div #mainimg {
     display: none;
   }
   .jumbotrom {
     justify-content: center;
+    padding: 40px;
   }
 
+  /* img uner the content section */
   .middle-img {
     max-width: 100%;
     height: auto;
