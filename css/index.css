@@ -173,6 +173,10 @@ nav {
 .navbar a:hover {
   color: red;
 }
+/* Mobile logo */
+#mobil-logo {
+  display: none;
+}
 
 /*Jumbotrom*/
 
@@ -322,9 +326,17 @@ ul li {
   .logo {
     display: none;
   }
+  #mobil-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
 
-  #mainimg img {
+  div #mainimg {
     display: none;
+  }
+  .jumbotrom {
+    justify-content: center;
   }
 
   .middle-img {
