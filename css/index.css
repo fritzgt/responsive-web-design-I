@@ -355,6 +355,8 @@ ul li {
   body {
     margin: 0;
   }
+
+  /* styling navbar */
   .navbar {
     flex-direction: column;
     height: auto;
@@ -366,11 +368,22 @@ ul li {
     text-align: center;
     width: 100%;
   }
+
+  /* jumbotron container */
   .jumbotrom {
     border-top: 1px solid gray;
   }
 
+  /* content boxes */
   .container {
     flex-direction: column;
   }
+  section {
+    margin-top: 30px;
+  }
+}
+
+/* contact section */
+.contact {
+  padding-left: 20px;
 }
