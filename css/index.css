@@ -298,6 +298,7 @@ p {
 button {
   padding: 10px 40px;
   margin: 30px 0;
+  border: 1px solid gray;
 }
 
 /*Lower content section*/
@@ -349,6 +350,21 @@ ul li {
     height: auto;
     display: block;
   }
+
+  /* Services page */
+  .grid div {
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .description {
+    flex-direction: column;
+  }
+
+  .service-img {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -381,9 +397,25 @@ ul li {
   section {
     margin-top: 30px;
   }
-}
 
-/* contact section */
-.contact {
-  padding-left: 20px;
+  /* contact section */
+  .contact {
+    padding-left: 20px;
+  }
+
+  /* Services page */
+  .grid div {
+    width: 100%;
+    height: auto;
+    margin: 1px 0;
+    border: 0;
+  }
+  .description {
+    flex-direction: column;
+  }
+
+  .service-img {
+    display: flex;
+    justify-content: center;
+  }
 }
