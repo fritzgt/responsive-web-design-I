@@ -325,7 +325,7 @@ ul li {
 
 @media (max-width: 800px) {
   /* Navbar */
-  .logo {
+  #logo-container {
     display: none;
   }
   #mobil-logo {
@@ -352,4 +352,25 @@ ul li {
 }
 
 @media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+  }
+  .navbar a {
+    padding: 15px;
+    border-top: 1px solid gray;
+    text-align: center;
+    width: 100%;
+  }
+  .jumbotrom {
+    border-top: 1px solid gray;
+  }
+
+  .container {
+    flex-direction: column;
+  }
 }
