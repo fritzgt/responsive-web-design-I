@@ -361,7 +361,7 @@ ul li {
     flex-direction: column;
   }
 
-  .service-img {
+  #service-img {
     display: flex;
     justify-content: center;
   }
@@ -404,18 +404,15 @@ ul li {
   }
 
   /* Services page */
+
+  .mobile-container,
+  #servicedesc {
+    padding: 20px;
+  }
   .grid div {
     width: 100%;
     height: auto;
     margin: 1px 0;
     border: 0;
-  }
-  .description {
-    flex-direction: column;
-  }
-
-  .service-img {
-    display: flex;
-    justify-content: center;
   }
 }
