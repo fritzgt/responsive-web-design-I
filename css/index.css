@@ -1,3 +1,418 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+  margin: 0 20px;
+}
+
+/*Nave bar and logo*/
+.navbar a,
+.logo {
+  text-decoration: none;
+  color: gray;
+}
+
+nav {
+  /* background-color: skyblue; */
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: red;
+}
+/* Mobile logo */
+#mobil-logo {
+  display: none;
+}
+
+/*Jumbotrom*/
+
+.jumbotrom {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#mainfont {
+  font-size: 60px;
+  font-family: "Indie Flower", cursive;
+}
+
+#mainimg {
+  padding: 50px;
+}
+
+#mainbutton {
+  font-size: 12px;
+  padding: 15px 20px;
+  background-color: skyblue;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  border: 4px solid skyblue;
+}
+
+.margin {
+  border-bottom: 1px solid black;
+}
+
+/*Main Content*/
+
+.box {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 30px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container section {
+  padding: 10px;
+}
+
+/*Changin font*/
+p {
+  font-family: "Muli", sans-serif;
+}
+
+h2 {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.services {
+  padding-top: 200px;
+}
+
+/*Contact section*/
+
+.contact {
+  padding: 30px 0;
+}
+
+/*Footer*/
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+/*Services page*/
+
+h1 {
+  font-size: 24px;
+}
+
+#servicedesc {
+  padding: 50px 0;
+  border-bottom: 3px solid lightgray;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/*Grid content*/
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 30px;
+}
+
+.grid div {
+  background-color: #f1f1f1;
+  border: 2px solid lightgray;
+  padding: 20px;
+  width: 430px;
+  height: 250px;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 18px;
+}
+
+button {
+  padding: 10px 40px;
+  margin: 30px 0;
+  border: 1px solid gray;
+}
+
+/*Lower content section*/
+
+.description {
+  display: flex;
+  border-top: 3px solid gray;
+  padding: 40px 0;
+}
+
+#about {
+  padding-right: 30px;
+}
+
+ul {
+  margin-top: 30px;
+}
+
+ul li {
+  list-style-type: disc;
+  margin: 10px 20px;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+  /* Navbar */
+  #logo-container {
+    display: none;
+  }
+  #mobil-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  /* Banner img */
+  div #mainimg {
+    display: none;
+  }
+  .jumbotrom {
+    justify-content: center;
+    padding: 40px;
+  }
+
+  /* img uner the content section */
+  .middle-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Services page */
+  .grid div {
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .description {
+    flex-direction: column;
+  }
+
+  #service-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  /* styling navbar */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+  }
+  .navbar a {
+    padding: 15px;
+    border-top: 1px solid gray;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* jumbotron container */
+  .jumbotrom {
+    border-top: 1px solid gray;
+  }
+
+  /* content boxes */
+  .container {
+    flex-direction: column;
+  }
+  section {
+    margin-top: 30px;
+  }
+
+  /* contact section */
+  .contact {
+    padding-left: 20px;
+  }
+
+  /* Services page */
+
+  .mobile-container,
+  #servicedesc {
+    padding: 20px;
+  }
+  .grid div {
+    width: 100%;
+    height: auto;
+    margin: 1px 0;
+    border: 0;
+  }
+}
